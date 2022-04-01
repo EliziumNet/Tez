@@ -1,9 +1,5 @@
 
 class Tez {
-  Tez() {
-    Write-Host "=== Hub constructed ===";
-  }
-
   static [boolean] accept([PSCustomObject]$info) {
 
     [string]$label = $(Get-PsObjectField -Object $info -Field 'Label');

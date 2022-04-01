@@ -30,7 +30,7 @@
   Copyright         = '(c) plastikfan. All rights reserved.'
 
   # Description of the functionality provided by this module
-  Description       = 'General Utilities'
+  Description       = 'Powershell Test Utilities'
 
   # Minimum version of the PowerShell engine required by this module
   PowerShellVersion = '7.0.0'
