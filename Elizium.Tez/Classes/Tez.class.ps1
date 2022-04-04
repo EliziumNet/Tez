@@ -15,6 +15,10 @@ class Tez {
     [boolean]$accept = if ([string]::IsNullOrEmpty($env:tag)) {
       -not($doSkip);
     }
+    elseif ($(Get-PsObjectField -Object $info -Field 'Override' -Default $false)) {
+      Write-Host "  💎 Override!";
+      $true;
+    }
     elseif (-not([string]::IsNullOrEmpty($label)) -and $env:tag -eq $label) {
       Write-Host "  💚 Labelled Test: '$($label)'";
       $true
